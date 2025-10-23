@@ -1,0 +1,9 @@
+#!/home/ryo1/anaconda3/bin/python3
+
+import sys
+
+print("fork")
+x = 0.0
+for n in sys.argv[1:]:
+    x += float(n)
+print(x)
