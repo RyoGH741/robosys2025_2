@@ -17,4 +17,3 @@ for line in sys.stdin:
     except:
         ans += float(line)
 print(ans)
-print("threek")
