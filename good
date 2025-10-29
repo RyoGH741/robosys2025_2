@@ -9,3 +9,11 @@ x = 0.0
 for n in sys.argv[1:]:
     x += float(n)
 print(x)
+
+ans = 0
+for line in sys.stdin:
+    try:
+        ans += int (line)
+    except:
+        ans += float(line)
+print(ans)
