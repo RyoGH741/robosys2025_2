@@ -1,0 +1,21 @@
+#!/home/ryo1/anaconda3/bin/python3
+# SPDX-FileCopyrightText: 2025 Ryoichi Sakamaki
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+print("fork")
+x = 0.0
+for n in sys.argv[1:]:
+    x += float(n)
+print(x)
+
+ans = 0
+for line in sys.stdin:
+    try:
+        ans += int (line)
+    except:
+        ans += float(line)
+print(ans)
+print("threek")
+print("twoson")
