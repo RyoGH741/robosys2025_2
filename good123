@@ -1,4 +1,4 @@
-#!/home/ryo1/anaconda3/bin/python3
+#!/usr/bin/python3
 # SPDX-FileCopyrightText: 2025 Ryoichi Sakamaki
 # SPDX-License-Identifier: BSD-3-Clause
 import sys
