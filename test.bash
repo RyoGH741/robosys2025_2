@@ -9,17 +9,17 @@ ng () {
 
 res=0
 
-out=$(seq 5 | /home/ryo1/robosys/1week/robosys2025_2/good123)
+out=$(seq 5 | ./good123)
 [ "${out}" = 15 ] || ng "$LINENO"
 
-out=$(echo い | /home/ryo1/robosys/1week/robosys2025_2/good123)
+out=$(echo い | ./good123)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(echo | /home/ryo1/robosys/1week/robosys2025_2/good123)
+out=$(echo | ./good123)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-[ "$res" = 0 ] && echo OK
+[ "${res}" = 0 ] && echo OK
 
 exit $res
